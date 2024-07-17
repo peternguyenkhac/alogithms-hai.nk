@@ -1,6 +1,4 @@
 ﻿using Bai1Array.Data;
-using Bai1Array.Service;
-using Bai1Array.Util;
 
 namespace Bai1Array
 {
@@ -13,31 +11,31 @@ namespace Bai1Array
             ProductService productService = new ProductService(database);
 
             Console.WriteLine("=== Map product by category ===");
-            productService.MapProductByCategory()?.Print();
+            productService.MapProductByCategory().Print();
 
             Console.WriteLine("=== Max price ===");
-            productService.MaxByPrice()?.Print();
+            productService.MaxByPrice().Print();
 
             Console.WriteLine("=== Min price ===");
-            productService.MinByPrice()?.Print();
+            productService.MinByPrice().Print();
 
             Console.WriteLine("=== Sort by price ===");
-            productService.SortByPrice()?.Print();
+            productService.SortByPrice().Print();
 
             Console.WriteLine("=== Sort by name lenght ===");
-            productService.SortByName()?.Print();
+            productService.SortByName().Print();
 
             Console.WriteLine("=== Sort by category name ===");
-            productService.SortByCategoryName()?.Print();
+            productService.SortByCategoryName().Print();
 
             Console.WriteLine("=== Find product by name Product 1 ===");
-            productService.FindProductByName("Product 1")?.Print();
+            productService.FindProductByName("Product 11").Print();
 
             Console.WriteLine("=== Find product by price 300 ===");
-            productService.FindProductByPrice(300)?.Print();
+            productService.FindProductByPrice(300).Print();
 
             Console.WriteLine("=== Find product by category 2 ===");
-            productService.FindProductByCategory(2)?.Print();
+            productService.FindProductByCategory(2).Print();
         }
     }
 }

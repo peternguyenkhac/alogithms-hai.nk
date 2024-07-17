@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bai1Array.Service
+namespace Bai1Array
 {
     public class ProductService
     {
@@ -109,7 +109,7 @@ namespace Bai1Array.Service
                 var current = _database.Products[i];
                 for (int j = i - 1; j >= 0;)
                 {
-                    if (String.Compare(GetCategoryById(current.CategoryId)?.Name, GetCategoryById(_database.Products[j].CategoryId)?.Name) < 0)
+                    if (string.Compare(GetCategoryById(current.CategoryId)?.Name, GetCategoryById(_database.Products[j].CategoryId)?.Name) < 0)
                     {
                         _database.Products[j + 1] = _database.Products[j];
                         j--;
@@ -155,14 +155,14 @@ namespace Bai1Array.Service
         public Product? MinByPrice()
         {
             int length = _database.Products.Length;
-            if(length == 0)
+            if (length == 0)
             {
                 return null;
             }
             Product minPriceProduct = _database.Products[0];
-            foreach(Product product in _database.Products)
+            foreach (Product product in _database.Products)
             {
-                if(minPriceProduct.Price > product.Price)
+                if (minPriceProduct.Price > product.Price)
                 {
                     minPriceProduct = product;
                 }
