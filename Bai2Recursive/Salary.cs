@@ -25,24 +25,14 @@ namespace Bai2Recursive
         //Bằng lương tháng hiện tại + lương các tháng trước đó
         public static decimal CalSalaryRecursive(decimal salary, int month)
         {
-            if (month == 1)
+            if(month == 1)
             {
                 return salary;
             }
-
-            return CalSalaryRecursive(salary, month - 1) + CalCurrentSalary(salary, month);
-        }
-
-        //Tính lương tháng hiện tại
-        //Lương tháng hiện tại + 10% mỗi tháng
-        public static decimal CalCurrentSalary(decimal salary, int month)
-        {
-            if (month == 1)
-            {
-                return salary;
-            }
-
-            return CalCurrentSalary(salary, month - 1) * (decimal)1.1;
+            
+            decimal prevTotalSalary = CalSalaryRecursive(salary, month - 1);
+            decimal currentSalary = salary * (decimal)Math.Pow(1.1, month - 1);
+            return prevTotalSalary + currentSalary;
         }
     }
 }
