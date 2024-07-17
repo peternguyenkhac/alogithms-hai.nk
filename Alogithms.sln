@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai1Array", "Bai1Array\Bai1Array.csproj", "{AAF97996-D019-46D8-AF65-2DBC3C04D318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai2Recursive", "Bai2Recursive\Bai2Recursive.csproj", "{6B86457C-FAD1-4244-B926-F5FF623A6B3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAF97996-D019-46D8-AF65-2DBC3C04D318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF97996-D019-46D8-AF65-2DBC3C04D318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF97996-D019-46D8-AF65-2DBC3C04D318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF97996-D019-46D8-AF65-2DBC3C04D318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B86457C-FAD1-4244-B926-F5FF623A6B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B86457C-FAD1-4244-B926-F5FF623A6B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B86457C-FAD1-4244-B926-F5FF623A6B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B86457C-FAD1-4244-B926-F5FF623A6B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A247F10-52C7-44D8-BABF-A61CF9706C0B}
+	EndGlobalSection
+EndGlobal
