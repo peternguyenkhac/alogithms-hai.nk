@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai1Array", "Bai1Array\Bai1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai2Recursive", "Bai2Recursive\Bai2Recursive.csproj", "{6B86457C-FAD1-4244-B926-F5FF623A6B3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai3Stack&Queue", "Bai3Stack&Queue\Bai3Stack&Queue.csproj", "{C8BC9592-1271-4CFF-B2D8-9D0DD11B6BC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6B86457C-FAD1-4244-B926-F5FF623A6B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B86457C-FAD1-4244-B926-F5FF623A6B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B86457C-FAD1-4244-B926-F5FF623A6B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8BC9592-1271-4CFF-B2D8-9D0DD11B6BC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8BC9592-1271-4CFF-B2D8-9D0DD11B6BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8BC9592-1271-4CFF-B2D8-9D0DD11B6BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8BC9592-1271-4CFF-B2D8-9D0DD11B6BC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bai2Recursive.CalMonth
+namespace Bai2Recursive
 {
     public static class Savings
     {
@@ -29,9 +29,9 @@ namespace Bai2Recursive.CalMonth
 
         //Tính số tháng để (tiền gửi + lãi suất) = x2 tiền gửi
         //Điều kiện dừng: amount = *2 tiền gửi
-        private static int CalMonthToReachAmount(decimal money, decimal amount ,decimal rate, int month)
+        private static int CalMonthToReachAmount(decimal money, decimal amount, decimal rate, int month)
         {
-            if(amount > money * 2)
+            if (amount > money * 2)
             {
                 return month;
             }

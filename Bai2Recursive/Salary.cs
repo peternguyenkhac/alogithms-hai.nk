@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bai2Recursive.CalSalary
+namespace Bai2Recursive
 {
     public static class Salary
     {
