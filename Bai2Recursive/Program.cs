@@ -4,19 +4,21 @@
     {
         static void Main(string[] args)
         {
-/*            Console.Write("Cal salary: ");
+            Console.Write("Cal salary: ");
             Console.WriteLine(Salary.CalSalary(1000, 4));
             Console.Write("Cal salary recursive: ");
             Console.WriteLine(Salary.CalSalaryRecursive(1000, 4));
             Console.Write("Cal month: ");
             Console.WriteLine(Savings.CalMonth(1000, 10));
             Console.Write("Cal month recursive: ");
-            Console.WriteLine(Savings.CalMonthRecursive(1000, 10));*/
+            Console.WriteLine(Savings.CalMonthRecursive(1000, 10));
 
+            Console.WriteLine("=== Menu ===");
             Menu[] menus = Init();
             menus.Print();
         }
 
+        //Khởi tạo data
         public static Menu[] Init()
         {
             return new Menu[]

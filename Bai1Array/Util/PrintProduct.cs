@@ -9,11 +9,13 @@ namespace Bai1Array.Util
 {
     public static class PrintProduct
     {
+        //In ra product
         public static void Print(this Product product)
         {
             Console.WriteLine($"Product Id: {product.Id}, Name: {product.Name}, Price: {product.Price}, Quantity: {product.Quantity} ,Category: {product.CategoryId}");
         }
 
+        //In ra danh sách product
         public static void Print(this List<Product> products)
         {
             foreach (var product in products)
@@ -22,6 +24,7 @@ namespace Bai1Array.Util
             }
         }
 
+        //In ra danh sách product map với category
         public static void Print(this Dictionary<Product, Category?> productCategoryMap)
         {
             foreach (var keyValue in productCategoryMap)

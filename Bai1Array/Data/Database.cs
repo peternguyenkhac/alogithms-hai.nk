@@ -18,6 +18,7 @@ namespace Bai1Array.Data
             Categories = new Category[] { };
         }
 
+        //Khởi tạo dữ liệu
         public void Initialize()
         {
             Products = new Product[]

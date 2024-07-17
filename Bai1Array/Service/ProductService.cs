@@ -17,6 +17,7 @@ namespace Bai1Array.Service
             _database = database;
         }
 
+        //Tìm kiếm product theo tên
         public Product? FindProductByName(string name)
         {
             foreach (Product product in _database.Products)
@@ -29,6 +30,7 @@ namespace Bai1Array.Service
             return null;
         }
 
+        //Tìm kiếm product theo category Id
         public List<Product> FindProductByCategory(int categoryId)
         {
             List<Product> products = new List<Product>();
@@ -43,6 +45,7 @@ namespace Bai1Array.Service
             return products;
         }
 
+        //Tìm kiếm product theo price
         public List<Product> FindProductByPrice(int price)
         {
             List<Product> products = new List<Product>();
@@ -57,6 +60,7 @@ namespace Bai1Array.Service
             return products;
         }
 
+        //Sắp xép product theo price
         public List<Product> SortByPrice()
         {
             int length = _database.Products.Length;
@@ -76,6 +80,7 @@ namespace Bai1Array.Service
             return products;
         }
 
+        //Sắp xếp product theo độ dài của tên
         public List<Product> SortByName()
         {
             int length = _database.Products.Length;
@@ -95,6 +100,7 @@ namespace Bai1Array.Service
             return products;
         }
 
+        //Sắp xếp product theo tên của category (alphabet)
         public List<Product> SortByCategoryName()
         {
             int length = _database.Products.Length;
@@ -120,6 +126,7 @@ namespace Bai1Array.Service
             return products;
         }
 
+        //Map product với category tương ứng
         public Dictionary<Product, Category?> MapProductByCategory()
         {
             Dictionary<Product, Category?> productCategoryMap = new Dictionary<Product, Category?>();
@@ -131,6 +138,7 @@ namespace Bai1Array.Service
             return productCategoryMap;
         }
 
+        //Lấy ra category theo Id
         private Category? GetCategoryById(int id)
         {
             foreach (Category category in _database.Categories)
@@ -143,6 +151,7 @@ namespace Bai1Array.Service
             return null;
         }
 
+        //Product giá rẻ nhất
         public Product? MinByPrice()
         {
             int length = _database.Products.Length;
@@ -163,6 +172,7 @@ namespace Bai1Array.Service
         }
 
 
+        //Product giá cao nhất
         public Product? MaxByPrice()
         {
             int length = _database.Products.Length;
