@@ -127,15 +127,15 @@ namespace Bai1Array
         }
 
         //Map product với category tương ứng
-        public Dictionary<Product, Category?> MapProductByCategory()
+        public List<Product> MapProductByCategory()
         {
-            Dictionary<Product, Category?> productCategoryMap = new Dictionary<Product, Category?>();
             foreach (Product product in _database.Products)
             {
                 Category? category = GetCategoryById(product.CategoryId);
-                productCategoryMap.Add(product, category);
+                product.Category = category;
             }
-            return productCategoryMap;
+            List<Product> products = _database.Products.ToList();
+            return products;
         }
 
         //Lấy ra category theo Id

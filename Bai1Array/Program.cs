@@ -11,7 +11,7 @@ namespace Bai1Array
             ProductService productService = new ProductService(database);
 
             Console.WriteLine("=== Map product by category ===");
-            productService.MapProductByCategory().Print();
+            productService.MapProductByCategory().PrintProductMapWithCategory();
 
             Console.WriteLine("=== Max price ===");
             productService.MaxByPrice().Print();
@@ -29,7 +29,7 @@ namespace Bai1Array
             productService.SortByCategoryName().Print();
 
             Console.WriteLine("=== Find product by name Product 1 ===");
-            productService.FindProductByName("Product 11").Print();
+            productService.FindProductByName("Product 1").Print();
 
             Console.WriteLine("=== Find product by price 300 ===");
             productService.FindProductByPrice(300).Print();

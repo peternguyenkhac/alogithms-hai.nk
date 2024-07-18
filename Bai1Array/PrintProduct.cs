@@ -18,7 +18,7 @@ namespace Bai1Array
             }
             else
             {
-                Console.WriteLine($"Product Id: {product.Id}, Name: {product.Name}, Price: {product.Price}, Quantity: {product.Quantity} ,Category: {product.CategoryId}");
+                Console.WriteLine($"Product Id: {product.Id}, Name: {product.Name}, Price: {product.Price}, Quantity: {product.Quantity}, Category id: {product.CategoryId}");
             }
         }
 
@@ -30,16 +30,20 @@ namespace Bai1Array
             }
             foreach (var product in products)
             {
-                Console.WriteLine($"Product Id: {product.Id}, Name: {product.Name}, Price: {product.Price}, Quantity: {product.Quantity} ,Category: {product.CategoryId}");
+                Console.WriteLine($"Product Id: {product.Id}, Name: {product.Name}, Price: {product.Price}, Quantity: {product.Quantity}, Category id: {product.CategoryId}");
             }
         }
 
         //In ra danh sách product map với category
-        public static void Print(this Dictionary<Product, Category?> productCategoryMap)
+        public static void PrintProductMapWithCategory(this List<Product> products)
         {
-            foreach (var keyValue in productCategoryMap)
+            if (products.Count == 0)
             {
-                Console.WriteLine($"Product Id: {keyValue.Key.Id}, Name: {keyValue.Key.Name}, Price: {keyValue.Key.Price}, Quantity: {keyValue.Key.Quantity}, Category name: {keyValue.Value?.Name ?? "null"}");
+                Console.WriteLine("Cannot find any product");
+            }
+            foreach (var product in products)
+            {
+                Console.WriteLine($"Product Id: {product.Id}, Name: {product.Name}, Price: {product.Price}, Quantity: {product.Quantity}, Category name: {product.Category?.Name ?? "null"}");
             }
         }
     }

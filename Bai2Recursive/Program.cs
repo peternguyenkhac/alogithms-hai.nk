@@ -20,7 +20,7 @@
             Console.WriteLine(Savings.CalMonthRecursive(1000, 10));
 
             Console.Write("Cal month recursive 2: ");
-            Console.WriteLine(Savings.CalMonthRecursive2(10, 2));
+            Console.WriteLine(Savings.CalMonthRecursive2(10, 2)); 
 
             Console.WriteLine("=== Menu ===");
             Menu[] menus = Init();
