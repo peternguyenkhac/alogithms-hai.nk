@@ -34,5 +34,20 @@ namespace Bai2Recursive
             decimal currentSalary = salary * (decimal)Math.Pow(1.1, month - 1);
             return prevTotalSalary + currentSalary;
         }
+
+        //Tính tổng lương tháng sử dụng đệ quy
+        //n tháng
+        //Bằng lươn tháng hiện tại + lương n - 1 tháng sau
+        //Lương tháng kế tiếp = 1.1 lương tháng hiện tại
+        public static decimal CalSalaryRecursive2(decimal salary, int month)
+        {
+            if (month > 1)
+            {
+                return salary + CalSalaryRecursive2(salary * (decimal)1.1, month - 1);
+            }
+
+            return salary;
+        }
+
     }
 }

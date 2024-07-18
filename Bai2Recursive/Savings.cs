@@ -40,6 +40,5 @@ namespace Bai2Recursive
             amount += amount * rate / 100;
             return CalMonthToDouble(money, amount, rate, month);
         }
-
     }
 }
