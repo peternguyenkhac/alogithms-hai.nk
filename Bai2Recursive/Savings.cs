@@ -40,5 +40,18 @@ namespace Bai2Recursive
             amount += amount * rate / 100;
             return CalMonthToDouble(money, amount, rate, month);
         }
+
+        //Tính số tháng để (tiền gửi + lãi suất) = n x tiền gửi
+        //n lần
+        //
+        public static int CalMonthRecursive2(decimal rate, decimal n)
+        {
+            if(n <= 1)
+            {
+                return 0;
+            }
+
+            return 1 + CalMonthRecursive2(rate, n / ((rate + 100) / 100));
+        }
     }
 }
