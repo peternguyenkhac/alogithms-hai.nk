@@ -42,8 +42,7 @@ namespace Bai2Recursive
         }
 
         //Tính số tháng để (tiền gửi + lãi suất) = n x tiền gửi
-        //n lần
-        //
+        // tiền gửi * (1 + lãi suất)^tháng >= tiền gửi * n
         public static int CalMonthRecursive2(decimal rate, decimal n)
         {
             if(n <= 1)
