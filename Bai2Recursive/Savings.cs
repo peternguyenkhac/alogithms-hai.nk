@@ -50,6 +50,7 @@ namespace Bai2Recursive
                 return 0;
             }
 
+
             return 1 + CalMonthRecursive2(rate, n / ((rate + 100) / 100));
         }
     }
